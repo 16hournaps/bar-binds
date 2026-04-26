@@ -111,8 +111,8 @@ bind               shift+alt+n  buildfacing dec
 bind           sc_u      reclaim
 bind           sc_i      
 bind           meta+sc_i  loadunits
-bind           sc_o      command_skip_current
-bind           sc_p      command_cancel_last
+bind           sc_p      command_skip_current
+bind           sc_o      command_cancel_last
 bind           z,z          repeat 0
 bind           z            repeat 1
 
