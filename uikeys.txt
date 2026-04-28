@@ -46,13 +46,13 @@ bind                shift+/ group selectadd 4
 bind                shift+# group selectadd 5
 bind                shift+@ group selectadd 6
 
-bind              alt+8  add_to_autogroup 0
-bind              alt+9  add_to_autogroup 1
-bind              alt+0  add_to_autogroup 2
-bind              alt+]  add_to_autogroup 3
-bind              alt+/  add_to_autogroup 4
-bind              alt+#  add_to_autogroup 5
-bind              alt+@  add_to_autogroup 6
+bind              meta+8,meta+8  add_to_autogroup 0
+bind              meta+9,meta+9  add_to_autogroup 1
+bind              meta+0,meta+0  add_to_autogroup 2
+bind              meta+],meta+]  add_to_autogroup 3
+bind              meta+/,meta+/  add_to_autogroup 4
+bind              meta+#,meta+#  add_to_autogroup 5
+bind              meta+@,meta+@  add_to_autogroup 6
 
 // GRID 
 
@@ -82,15 +82,15 @@ bind           v  gridmenu_key 3 4
 
 // CAMERA ANCHORS
 
-bind            left       focus_camera_anchor 1
-bind            right     focus_camera_anchor 2
-bind            up           focus_camera_anchor 3
-bind            down       focus_camera_anchor 4
+bind            sc_i       focus_camera_anchor 1
+bind            sc_k     focus_camera_anchor 2
+bind            sc_l           focus_camera_anchor 3
+bind            n       focus_camera_anchor 4
 
-bind            meta+left       set_camera_anchor 1
-bind            meta+right      set_camera_anchor 2
-bind            meta+up         set_camera_anchor 3
-bind            meta+down       set_camera_anchor 4
+bind            meta+sc_i       set_camera_anchor 1
+bind            meta+sc_k      set_camera_anchor 2
+bind            meta+sc_l         set_camera_anchor 3
+bind            meta+n       set_camera_anchor 4
 
 // GLOBAL MODIFIERS
 
@@ -109,25 +109,28 @@ bind               shift+alt+s  buildfacing inc
 bind               shift+alt+n  buildfacing dec
 
 bind           sc_u      reclaim
-bind           sc_i      
-bind           meta+sc_i  loadunits
-bind           sc_p      command_skip_current
-bind           sc_o      command_cancel_last
+bind           q      command_skip_current
+// Idk i never use cance last, usually you just redo it 
+// bind           sc_o      command_cancel_last
 bind           z,z          repeat 0
 bind           z            repeat 1
 
 bind           sc_j      repair
 bind               meta+sc_j  resurrect
 bind               meta+sc_j  capture
-bind           sc_o      attack
-bind           sc_l      fight
-bind           sc_k  
-bind           meta+sc_k    unloadunits
-bind               n  manualfire
-bind               n  manuallaunch
-bind           n         settarget
-bind           n,n       canceltarget
-bind           meta+n      attack
+bind           sc_o       canceltarget
+bind           sc_o
+
+bind               meta+sc_p  attack
+bind               sc_p  manualfire
+bind               sc_p  manuallaunch
+bind           sc_p         settarget
+
+bind           meta+z  loadunits
+bind           meta+q    unloadunits
+
+// we can right click or set target no need for attack
+// bind           meta+n      attack
 
 
 //bind          right,right  drawlabel
